@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestro Amor Eterno ❤️</title>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.13.5/cdn.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        document.addEventListener('alpine:init', () => {
+            Alpine.data('player', () => ({
+                audio: new Audio('Danny Ocean - AMOR.mp3'),
+                isPlaying: false,
+
+                playPause() {
+                    if (this.isPlaying) {
+                        this.audio.pause();
+                    } else {
+                        this.audio.play();
+                    }
+                    this.isPlaying = !this.isPlaying;
+                }
+            }))
+        })
+    </script>
+    <style>
+        /* Animación de gradiente del fondo */
+.animate-gradient {
+    background: linear-gradient(120deg, #ff69b4, #da70d6, #ff1493, #c71585);
+    background-size: 300% 300%;
+    animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50% }
+    50% { background-position: 100% 50% }
+    100% { background-position: 0% 50% }
+}
+
+/* Animación de desplazamiento del gradiente */
+.animate-gradient-shift {
+    animation: gradientShift 8s ease-in-out infinite;
+}
+
+@keyframes gradientShift {
+    0%, 100% { opacity: 0.8; }
+    50% { opacity: 0.6; }
+}
+
+/* Título con gradiente animado */
+.fancy-gradient-text {
+    background: linear-gradient(to right, #fff, #ffd1dc, #fff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: shimmer 3s infinite;
+    text-shadow: 0 0 20px rgba(255,255,255,0.5);
+}
+
+@keyframes shimmer {
+    0% { background-position: -100% center; }
+    100% { background-position: 200% center; }
+}
+
+/* Animación mejorada para elementos flotantes */
+.floating-element {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: rgba(255,255,255,0.3);
+    border-radius: 50%;
+    animation: float 20s linear infinite;
+}
+
+.glow-effect {
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255,255,255,0.8), transparent);
+    border-radius: 50%;
+    animation: glow 2s ease-in-out infinite;
+}
+
+@keyframes glow {
+    0%, 100% { transform: scale(1); opacity: 0.5; }
+    50% { transform: scale(1.2); opacity: 1; }
+}
+
+/* Animación mejorada para los corazones */
+.heartbeat-enhanced {
+    animation: enhancedHeartBeat 1.5s ease-in-out infinite;
+    filter: drop-shadow(0 0 10px rgba(255,182,193,0.8));
+}
+
+@keyframes enhancedHeartBeat {
+    0%, 100% { transform: scale(1); }
+    25% { transform: scale(1.1); }
+    50% { transform: scale(1); }
+    75% { transform: scale(1.2); }
+}
+
+
+@keyframes heartBeat {
+    0%, 100% { transform: scale(1); }
+    25% { transform: scale(1.1); }
+    50% { transform: scale(1); }
+    75% { transform: scale(1.2); }
+}
+
+/* Borde brillante mejorado */
+.glowing-border-enhanced {
+    position: relative;
+    border: 2px solid rgba(255,255,255,0.3);
+    animation: borderGlow 3s ease-in-out infinite;
+}
+
+@keyframes borderGlow {
+    0%, 100% { box-shadow: 0 0 20px rgba(255,192,203,0.5); }
+    50% { box-shadow: 0 0 30px rgba(255,182,193,0.8); }
+}
+
+/* Sombra de texto fancy */
+.fancy-text-shadow {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3),
+                 0 0 10px rgba(255,255,255,0.5);
+}
+
+/* Animación del título */
+.animate-title {
+    animation: titleAppear 1.5s ease-out;
+}
+
+@keyframes titleAppear {
+    0% { transform: translateY(-20px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+/* Animación de texto flotante */
+.animate-text-float {
+    animation: textFloat 3s ease-in-out infinite;
+}
+
+@keyframes textFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Animación de flecha flotante */
+.animate-float {
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            25% { transform: scale(1.1); }
+            40% { transform: scale(1); }
+            60% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        @keyframes glow {
+            0% { box-shadow: 0 0 5px #ff69b4, 0 0 10px #ff69b4, 0 0 15px #ff69b4; }
+            100% { box-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4, 0 0 30px #ff69b4; }
+        }
+
+        .floating {
+            animation: floatUpDown 6s ease-in-out infinite;
+        }
+        @keyframes floatUpDown {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        .heartbeat {
+            animation: heartbeat 1.5s ease-in-out infinite;
+        }
+
+        .glow {
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        .polaroid {
+            transform: rotate(var(--rotation));
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+        }
+
+        .polaroid::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, rgba(255,255,255,0.2), rgba(255,255,255,0));
+            transition: opacity 0.3s ease;
+            opacity: 0;
+        }
+
+        .polaroid:hover {
+            transform: rotate(0deg) scale(1.05);
+            z-index: 10;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        .polaroid:hover::before {
+            opacity: 1;
+        }
+
+        .floating-hearts {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 100;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 24px;
+            height: calc(100% + 20px);
+            width: 2px;
+            background: linear-gradient(to bottom, #e11d48, #db2777);
+        }
+
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        #particles-js {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        .text-shine {
+            background: linear-gradient(to right, #ff69b4 20%, #ff1493 40%, #ff1493 60%, #ff69b4 80%);
+            background-size: 200% auto;
+            color: #000;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: shine 2s linear infinite;
+        }
+
+        @keyframes shine {
+            to {
+                background-position: 200% center;
+            }
+        }
+
+        .hover-lift {
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .hover-lift:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-3d {
+            transform-style: preserve-3d;
+            perspective: 1000px;
+        }
+
+        .card-3d:hover .card-content {
+            transform: rotateY(10deg);
+        }
+
+        .card-content {
+            transition: transform 0.5s ease;
+        }
+        .petal {
+            position: fixed;
+            pointer-events: none;
+            z-index: 1000;
+            animation: falling linear infinite;
+        }
+    
+        @keyframes falling {
+            0% {
+                transform: translateY(-10%) rotate(0deg);
+            }
+            100% {
+                transform: translateY(100vh) rotate(360deg);
+            }
+        }
+    
+        /* Efecto de brillo para elementos */
+        .sparkle {
+            position: relative;
+            overflow: hidden;
+        }
+    
+        .sparkle::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(
+                45deg,
+                rgba(255,255,255,0) 0%,
+                rgba(255,255,255,0.8) 50%,
+                rgba(255,255,255,0) 100%
+            );
+            transform: rotate(45deg);
+            animation: sparkleEffect 3s infinite;
+        }
+    
+        @keyframes sparkleEffect {
+            0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+            100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+        }
+    
+        /* Efecto de marco decorativo */
+        .decorative-frame {
+            position: relative;
+            border: 2px solid rgba(255, 192, 203, 0.3);
+            border-radius: 15px;
+            padding: 20px;
+        }
+    
+        .decorative-frame::before {
+            content: '❤';
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: white;
+            padding: 0 10px;
+            color: #ff69b4;
+            font-size: 1.5em;
+        }
+    
+        /* Cursor personalizado */
+        .custom-cursor {
+            cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='%23ff69b4'%3E%3Cpath d='M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z'/%3E%3C/svg%3E"), auto;
+        }
+    
+        /* Efecto de papel doblado */
+        .folded-corner {
+            position: relative;
+            background: white;
+        }
+    
+        .folded-corner::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            border-style: solid;
+            border-width: 0 50px 50px 0;
+            border-color: transparent #ffd1dc transparent transparent;
+        }
+    
+        /* Cinta decorativa */
+        .ribbon {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            z-index: 1;
+            overflow: hidden;
+            width: 75px;
+            height: 75px;
+            text-align: right;
+        }
+    
+        .ribbon span {
+            font-size: 10px;
+            font-weight: bold;
+            color: #FFF;
+            text-transform: uppercase;
+            text-align: center;
+            line-height: 20px;
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            width: 100px;
+            display: block;
+            background: linear-gradient(#ff69b4 0%, #ff1493 100%);
+            box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+            position: absolute;
+            top: 19px;
+            right: -21px;
+        }
+        .parallax-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 120%;
+            background-size: cover;
+            background-position: center;
+            transform: translateZ(0);
+            transition: transform 0.5s ease-out;
+        }
+    
+        .text-gradient {
+            background: linear-gradient(120deg, #ff69b4, #ff1493, #ff69b4);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: shine 3s linear infinite;
+        }
+    
+        .floating-hearts {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 50;
+        }
+    
+        .heart-shape {
+            position: absolute;
+            opacity: 0.8;
+            animation: floatHeart 20s linear infinite;
+            transform-origin: center;
+            will-change: transform;
+        }
+
+/* Animación específica para los corazones */
+@keyframes floatHeart {
+    0% {
+        transform: translate(0, 0) rotate(0) scale(1);
+        opacity: 0.8;
+    }
+    25% {
+        transform: translate(50px, -100px) rotate(90deg) scale(1.1);
+        opacity: 0.9;
+    }
+    50% {
+        transform: translate(0, -200px) rotate(180deg) scale(1);
+        opacity: 0.8;
+    }
+    75% {
+        transform: translate(-50px, -100px) rotate(270deg) scale(1.1);
+        opacity: 0.9;
+    }
+    100% {
+        transform: translate(0, 0) rotate(360deg) scale(1);
+        opacity: 0.8;
+    }
+}
+    
+        .glowing-border {
+            position: relative;
+        }
+    
+        .glowing-border::before {
+            content: '';
+            position: absolute;
+            top: -3px;
+            left: -3px;
+            right: -3px;
+            bottom: -3px;
+            background: linear-gradient(45deg, #ff69b4, #ff1493, #ff69b4);
+            border-radius: 10px;
+            z-index: -1;
+            animation: borderGlow 3s linear infinite;
+        }
+    
+        @keyframes borderGlow {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.5;
+            }
+        }
+    
+        .fancy-underline {
+            position: relative;
+            display: inline-block;
+        }
+    
+        .fancy-underline::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, #fff, transparent);
+            animation: underlineMove 3s ease-in-out infinite;
+        }
+    
+        @keyframes underlineMove {
+            0%, 100% {
+                transform: scaleX(0);
+            }
+            50% {
+                transform: scaleX(1);
+            }
+        }
+        .music-player {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(8px);
+            padding: 16px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            z-index: 1000;
+        }
+
+        .music-player:hover {
+            transform: translateY(-5px);
+        }
+
+        .player-container {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .play-button {
+            background: #ec4899;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 48px;
+            height: 48px;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .play-button:hover {
+            background: #db2777;
+            transform: scale(1.1);
+        }
+
+        .song-info {
+            flex: 1;
+        }
+
+        .song-title {
+            color: #db2777;
+            font-weight: 500;
+            margin: 0 0 8px 0;
+        }
+
+        .progress-bar {
+            background: #fce7f3;
+            height: 4px;
+            border-radius: 2px;
+            overflow: hidden;
+        }
+
+        .progress {
+            background: #ec4899;
+            height: 100%;
+            width: 0%;
+            transition: width 0.1s linear;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-pink-50 via-purple-50 to-pink-50 min-h-screen">
+    <div id="particles-js"></div>
+    
+    <div x-data="{
+        currentImage: 0,
+        isPlaying: false,
+        showLetter: false,
+        images: [
+            'images/1.jpeg',
+            'images/3.jpeg',
+            'images/4.jpeg'
+        ],
+        messages: [
+            '💖 El momento en que nuestros caminos se cruzaron',
+            '🌹 Cada día contigo es mágico',
+            '✨ Construyendo sueños juntos'
+        ],
+        createHeart() {
+            const heart = document.createElement('div');
+            heart.innerHTML = '❤️';
+            heart.style.position = 'fixed';
+            heart.style.left = Math.random() * 100 + 'vw';
+            heart.style.top = '100vh';
+            heart.style.fontSize = (Math.random() * 20 + 10) + 'px';
+            heart.style.animation = 'float 4s ease-in forwards';
+            heart.style.opacity = '0.8';
+            heart.style.zIndex = '1000';
+            document.body.appendChild(heart);
+            setTimeout(() => heart.remove(), 4000);
+        }
+    }" 
+    class="relative"
+    x-init="setInterval(() => createHeart(), 2000)">
+
+<!-- Header con efecto parallax mejorado -->
+<header class="relative h-screen flex items-center justify-center overflow-hidden" x-data="{ scroll: 0 }" @scroll.window="scroll = window.pageYOffset">
+    <!-- Fondo con efecto parallax y animación de gradiente -->
+    <div class="parallax-bg animate-gradient"
+         :style="{ transform: `translateY(${scroll * 0.5}px)` }">
+        <!-- Burbujas flotantes con brillo -->
+        <div class="floating-elements">
+            <template x-for="i in 20">
+                <div class="floating-element"
+                     :style="`left: ${Math.random() * 100}%; top: ${Math.random() * 100}%; 
+                     animation-delay: -${Math.random() * 20}s;
+                     transform: scale(${0.5 + Math.random()});`">
+                    <div class="glow-effect"></div>
+                </div>
+            </template>
+        </div>
+        
+        <!-- Corazones flotantes aumentados -->
+        <div class="floating-hearts">
+            <template x-for="i in 15">
+                <div class="heart-shape text-4xl"
+                     :style="`
+                        left: ${Math.random() * 100}%; 
+                        top: ${Math.random() * 100}%;
+                        animation-delay: -${Math.random() * 20}s;
+                        transform: scale(${0.8 + Math.random() * 0.5});
+                     `">
+                    ❤️
+                </div>
+            </template>
+        </div>
+    </div>
+    
+    <!-- Overlay gradiente mejorado -->
+    <div class="absolute inset-0 bg-gradient-to-br from-pink-400/90 via-purple-500/80 to-fuchsia-500/90 animate-gradient-shift z-10"></div>
+    
+    <!-- Contenido principal -->
+    <div class="relative z-20 text-center px-4 max-w-4xl mx-auto" 
+         data-aos="fade-up"
+         data-aos-duration="1500">
+        <!-- Marco decorativo con brillo -->
+        <div class="glowing-border-enhanced bg-white/15 backdrop-blur-md p-10 rounded-2xl shadow-2xl">
+            <h1 class="text-7xl font-bold mb-8 animate-title">
+                <span class="fancy-gradient-text">Para el Amor de mi Vida</span>
+            </h1>
+            
+            <div class="space-y-8">
+                <p class="text-3xl text-white/95 italic animate-text-float fancy-text-shadow" style="animation-delay: 0.3s">
+                    "Cada momento contigo es un tesoro inolvidable"
+                </p>
+                
+                <!-- Emojis con animación mejorada -->
+                <div class="flex items-center justify-center gap-6 mt-10">
+                    <div class="heartbeat-enhanced text-7xl hover:scale-125 transition-transform">💖</div>
+                    <div class="heartbeat-enhanced text-7xl hover:scale-125 transition-transform" style="animation-delay: 0.5s">🧸</div>
+                    <div class="heartbeat-enhanced text-7xl hover:scale-125 transition-transform" style="animation-delay: 1s">❤️‍🩹</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Contador de tiempo juntos mejorado -->
+        <div class="mt-12 bg-white/25 backdrop-blur-lg rounded-full px-10 py-5 inline-block transform hover:scale-105 transition-transform shadow-lg"
+             x-data="{ 
+                 startDate: new Date('2024-07-20'),
+                 getDays() {
+                     const now = new Date();
+                     const diff = now - this.startDate;
+                     return Math.floor(diff / (1000 * 60 * 60 * 24));
+                 }
+             }">
+            <p class="text-2xl text-white fancy-text-shadow">
+                <span class="font-bold" x-text="getDays()"></span> días amándote 
+                <span class="animate-bounce inline-block">❤️</span>
+            </p>
+        </div>
+    </div>
+
+    <!-- Flecha de scroll mejorada -->
+    <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-20 text-center cursor-pointer hover:scale-110 transition-transform">
+        <div class="animate-float bg-white/30 backdrop-blur-lg rounded-full p-5 shadow-lg">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+            </svg>
+        </div>
+        <p class="text-white/90 mt-3 text-sm font-medium tracking-wider">Descubre nuestra historia</p>
+    </div>
+</header>
+
+        <!-- Reproductor de Música Mejorado -->
+        <div x-data="player" class="fixed bottom-4 right-4 z-50 glass-effect rounded-lg p-4 hover-lift">
+            <div class="flex items-center gap-4">
+                <button 
+                    @click="playPause()"
+                    class="bg-pink-500 text-white rounded-full p-4 hover:bg-pink-600 transition-all transform hover:scale-110">
+                    <svg x-show="!isPlaying" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                    <svg x-show="isPlaying" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 9v6m4-6v6m7-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                </button>
+                <div>
+                    <p class="font-medium text-pink-600">Danny Ocean - AMOR</p>
+                    <div class="h-1 bg-pink-200 rounded-full mt-2">
+                        <div class="h-full bg-pink-500 rounded-full" style="width: 0%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+        <!-- Galería Principal con Efectos 3D -->
+        <main class="max-w-6xl mx-auto p-4 pt-20">
+            <div class="card-3d" data-aos="fade-up">
+                <div class="card-content bg-white rounded-2xl shadow-2xl overflow-hidden">
+                    <div class="relative h-[600px]">
+                        <template x-for="(image, index) in images" :key="index">
+                            <img 
+                                :src="image"
+                                :class="{'opacity-100 scale-100': currentImage === index, 'opacity-0 scale-95': currentImage !== index}"
+                                class="absolute inset-0 w-full h-full object-cover transition-all duration-1000"
+                                :alt="'Foto ' + (index + 1)"
+                            >
+                        </template>
+                        
+                        <!-- Controles con efecto hover -->
+                        <div class="absolute inset-0 flex items-center justify-between p-6">
+                            <button 
+                                @click="currentImage = (currentImage - 1 + images.length) % images.length"
+                                @mouseenter="createHeart"
+                                class="bg-white/30 backdrop-blur-md hover:bg-white/50 rounded-full p-4 transition-all transform hover:scale-110 hover:-translate-x-2">
+                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                                </svg>
+                            </button>
+                            <button 
+                                @click="currentImage = (currentImage + 1) % images.length"
+                                @mouseenter="createHeart"
+                                class="bg-white/30 backdrop-blur-md hover:bg-white/50 rounded-full p-4 transition-all transform hover:scale-110 hover:translate-x-2">
+                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Mensaje con animación -->
+                    <div class="p-8 text-center bg-gradient-to-r from-pink-50 to-purple-50">
+                        <p x-text="messages[currentImage]" 
+                           class="text-2xl text-gray-700 italic"
+                           x-transition:enter="transition ease-out duration-500"
+                           x-transition:enter-start="opacity-0 transform translate-y-4"
+                           x-transition:enter-end="opacity-100 transform translate-y-0"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-24">
+                <h2 class="text-4xl font-bold text-center text-shine mb-16">Momentos Mágicos</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 p-8">
+                    <div class="polaroid bg-white p-6 shadow-xl" style="--rotation: -3deg" data-aos="fade-up">
+                        <img src="images\2.jpeg" class="w-full h-64 object-cover mb-6 rounded" alt="Momento especial 1">
+                        <p class="text-center text-sm text-gray-500 mt-2">Cambió mi vida para siempre</p>
+                    </div>
+                    <div class="polaroid bg-white p-6 shadow-xl" style="--rotation: 2deg" data-aos="fade-up" data-aos-delay="100">
+                        <img src="images\5.jpeg" class="w-full h-64 object-cover mb-6 rounded" alt="Momento especial 2">
+                        <p class="text-center text-sm text-gray-500 mt-2">El inicio de algo hermoso</p>
+                    </div>
+                    <div class="polaroid bg-white p-6 shadow-xl" style="--rotation: -2deg" data-aos="fade-up" data-aos-delay="200">
+                        <img src="images\6.jpeg" class="w-full h-64 object-cover mb-6 rounded" alt="Momento especial 3">
+                        <p class="text-center text-sm text-gray-500 mt-2">Aventuras juntos</p>
+                    </div>
+                    
+                    <!-- Nuevas fotos añadidas -->
+                    <div class="polaroid bg-white p-6 shadow-xl" style="--rotation: 3deg" data-aos="fade-up">
+                        <img src="images\7.jpeg" class="w-full h-64 object-cover mb-6 rounded" alt="Momento especial 4">
+                        <p class="text-center text-sm text-gray-500 mt-2">Celebrando nuestro amor</p>
+                    </div>
+                    <div class="polaroid bg-white p-6 shadow-xl" style="--rotation: -4deg" data-aos="fade-up" data-aos-delay="100">
+                        <img src="images\8.jpeg" class="w-full h-64 object-cover mb-6 rounded" alt="Momento especial 5">
+                        <p class="text-center text-sm text-gray-500 mt-2">Momentos son simepre especiales</p>
+                    </div>
+                    <div class="polaroid bg-white p-6 shadow-xl" style="--rotation: 2deg" data-aos="fade-up" data-aos-delay="200">
+                        <img src="images\9.jpeg" class="w-full h-64 object-cover mb-6 rounded" alt="Momento especial 6">
+                        <p class="text-center text-sm text-gray-500 mt-2">Tardes perfectas contigo</p>
+                    </div>
+                    <div class="polaroid bg-white p-6 shadow-xl" style="--rotation: -1deg" data-aos="fade-up">
+                        <img src="images\10.jpeg" class="w-full h-64 object-cover mb-6 rounded" alt="Momento especial 7">
+                        <p class="text-center text-sm text-gray-500 mt-2">Bailando juntos</p>
+                    </div>
+                    <div class="polaroid bg-white p-6 shadow-xl" style="--rotation: 3deg" data-aos="fade-up" data-aos-delay="100">
+                        <img src="images\11.jpeg" class="w-full h-64 object-cover mb-6 rounded" alt="Momento especial 8">
+                        <p class="text-center text-sm text-gray-500 mt-2">Atardeceres mágicos</p>
+                    </div>
+                    <div class="polaroid bg-white p-6 shadow-xl" style="--rotation: -2deg" data-aos="fade-up" data-aos-delay="200">
+                        <img src="images\12.jpeg" class="w-full h-64 object-cover mb-6 rounded" alt="Momento especial 9">
+                        <p class="text-center text-sm text-gray-500 mt-2">Celebrando la vida</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Línea de Tiempo Mejorada -->
+            <section class="mt-24 px-8 ">
+                <h2 class="text-4xl font-bold text-center text-shine mb-16">Nuestra Historia de Amor</h2>
+                <div class="relative space-y-12 pl-12">
+                    <div class="timeline-item relative pb-12" data-aos="fade-left">
+                        <div class="absolute -left-3 bg-pink-500 rounded-full w-6 h-6 glow"></div>
+                        <div class="bg-white rounded-xl shadow-xl p-8 hover-lift">
+                            <h3 class="font-bold text-2xl text-pink-600 mb-4">El Comienzo de Todo</h3>
+                            <p class="text-gray-600">Aquel día mágico cuando nuestros caminos se cruzaron por primera vez. Desde ese momento, supe que serías alguien especial en mi vida.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item relative pb-12" data-aos="fade-left" data-aos-delay="100">
+                        <div class="absolute -left-3 bg-pink-500 rounded-full w-6 h-6 glow"></div>
+                        <div class="bg-white rounded-xl shadow-xl p-8 hover-lift">
+                            <h3 class="font-bold text-2xl text-pink-600 mb-4">Nuestro Primer Beso</h3>
+                            <p class="text-gray-600">Un momento que quedará grabado en mi memoria para siempre. Las mariposas, la emoción, todo fue perfecto.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item relative" data-aos="fade-left" data-aos-delay="200">
+                        <div class="absolute -left-3 bg-pink-500 rounded-full w-6 h-6 glow"></div>
+                        <div class="bg-white rounded-xl shadow-xl p-8 hover-lift">
+                            <h3 class="font-bold text-2xl text-pink-600 mb-4">Nuestro Amor Crece</h3>
+                            <p class="text-gray-600">Cada día descubro nuevas razones para amarte más. Nuestro amor es como un jardín que florece constantemente.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Carta de Amor Mejorada -->
+            <section class="mt-24 max-w-3xl mx-auto px-4">
+                <div class="bg-white rounded-2xl shadow-2xl p-12" data-aos="zoom-in">
+                    <h2 class="text-4xl font-bold text-pink-600 mb-8 text-center">Mi Carta para Ti</h2>
+                    <div x-show="!showLetter" class="text-center">
+                        <button 
+                            @click="showLetter = true"
+                            @mouseenter="createHeart"
+                            class="bg-gradient-to-r from-pink-500 to-purple-500 text-white px-8 py-4 rounded-lg text-xl hover:shadow-lg transform hover:scale-105 transition-all">
+                            Abrir Carta de Amor ❤️
+                        </button>
+                    </div>
+                    <div x-show="showLetter" 
+                         x-transition:enter="transition ease-out duration-500"
+                         x-transition:enter-start="opacity-0 transform scale-95"
+                         x-transition:enter-end="opacity-100 transform scale-100"
+                         class="prose mx-auto">
+                        <p class="text-2xl text-gray-700 leading-relaxed italic mb-6">
+                            Mi amor infinito,
+                        </p>
+                        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                            Cada día a tu lado es una nueva aventura, un nuevo capítulo en nuestra historia de amor.
+                            Tu sonrisa ilumina mis días más oscuros, tu voz es la melodía que alegra mi corazón,
+                            y tu amor es el regalo más precioso que la vida me ha dado.
+                        </p>
+                        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                            En cada momento juntos, en cada risa compartida, en cada mirada cómplice,
+                            mi amor por ti crece más y más. Eres mi presente y mi futuro, mi compañera
+                            de vida y mi mejor amiga.
+                        </p>
+                        <p class="text-lg text-gray-700 leading-relaxed mb-8">
+                            Te amo más que ayer y menos que mañana.
+                        </p>
+                        <p class="text-right text-2xl text-pink-600 font-bold mt-8">
+                            Con todo mi amor ❤️
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer Mejorado -->
+        <footer class="bg-gradient-to-r from-purple-500 to-pink-500 text-white py-12 mt-24">
+            <div class="max-w-4xl mx-auto px-4 text-center">
+                <p class="text-2xl mb-4">"Contigo, cada día es una nueva razón para sonreír"</p>
+                <p class="text-lg opacity-75">Hecho con todo mi ❤️ para ti</p>
+            </div>
+        </footer>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const hearts = document.querySelectorAll('.heart-shape');
+            
+            window.addEventListener('mousemove', (e) => {
+                const mouseX = e.clientX / window.innerWidth;
+                const mouseY = e.clientY / window.innerHeight;
+                
+                hearts.forEach(heart => {
+                    const speed = parseFloat(heart.dataset.speed || Math.random() * 0.5);
+                    const x = (window.innerWidth - e.pageX * speed) / 100;
+                    const y = (window.innerHeight - e.pageY * speed) / 100;
+                    
+                    heart.style.transform = `translate(${x}px, ${y}px) rotate(${x * y}deg)`;
+                });
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            AOS.init({
+                duration: 1000,
+                once: true,
+                offset: 100
+            });
+
+            // Configuración de particles.js
+            particlesJS('particles-js', {
+                particles: {
+                    number: {
+                        value: 50,
+                        density: {
+                            enable: true,
+                            value_area: 800
+                        }
+                    },
+                    color: {
+                        value: '#ff69b4'
+                    },
+                    shape: {
+                        type: 'heart'
+                    },
+                    opacity: {
+                        value: 0.5,
+                        random: false,
+                        animation: {
+                            enable: true,
+                            speed: 1,
+                            opacity_min: 0.1,
+                            sync: false
+                        }
+                    },
+                    size: {
+                        value: 5,
+                        random: true,
+                        animation: {
+                            enable: true,
+                            speed: 4,
+                            size_min: 0.3,
+                            sync: false
+                        }
+                    },
+                    move: {
+                        enable: true,
+                        speed: 2,
+                        direction: 'none',
+                        random: true,
+                        straight: false,
+                        out_mode: 'out',
+                        bounce: false
+                    }
+                },
+                interactivity: {
+                    detect_on: 'canvas',
+                    events: {
+                        onhover: {
+                            enable: true,
+                            mode: 'repulse'
+                        },
+                        onclick: {
+                            enable: true,
+                            mode: 'push'
+                        },
+                        resize: true
+                    }
+                },
+                retina_detect: true
+            });
+        });
+    </script>
+
+    <script>
+        // Función para crear pétalos cayendo
+        function createPetal() {
+            const petal = document.createElement('div');
+            petal.className = 'petal';
+            petal.innerHTML = '🌸';
+            petal.style.left = Math.random() * 100 + 'vw';
+            petal.style.animationDuration = Math.random() * 3 + 2 + 's';
+            petal.style.opacity = Math.random() * 0.5 + 0.5;
+            petal.style.fontSize = Math.random() * 10 + 10 + 'px';
+            document.body.appendChild(petal);
+            
+            // Eliminar el pétalo después de la animación
+            setTimeout(() => {
+                petal.remove();
+            }, 5000);
+        }
+    
+        // Crear pétalos cada cierto tiempo
+        setInterval(createPetal, 300);
+    
+        // Efecto de cursor con corazón siguiendo el mouse
+        document.addEventListener('mousemove', (e) => {
+            const heart = document.createElement('div');
+            heart.innerHTML = '♥';
+            heart.style.position = 'fixed';
+            heart.style.left = e.clientX + 'px';
+            heart.style.top = e.clientY + 'px';
+            heart.style.pointerEvents = 'none';
+            heart.style.color = '#ff69b4';
+            heart.style.opacity = '0.6';
+            heart.style.transition = 'all 0.5s ease';
+            document.body.appendChild(heart);
+    
+            setTimeout(() => {
+                heart.style.transform = 'translateY(-20px)';
+                heart.style.opacity = '0';
+            }, 50);
+    
+            setTimeout(() => {
+                heart.remove();
+            }, 500);
+        });
+    </script> 
+
+</body>
+</html>
